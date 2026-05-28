@@ -1,0 +1,12 @@
+{
+  "name": "token-refresh-73a521",
+  "version": "1.0.0",
+  "description": "A token-refresh utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["token-refresh", "utility"],
+  "license": "MIT"
+}

