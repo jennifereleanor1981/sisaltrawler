@@ -1,5 +1,5 @@
 'use strict';
-const APP_TAG = 'token-refresh-73a521';
+const APP_TAG = 'token-refresh-c23601';
 async function execute() {
   console.log(`[${APP_TAG}] Starting...`);
   const start = Date.now();
